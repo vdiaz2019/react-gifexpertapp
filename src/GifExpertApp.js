@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import {AddCategory} from './components/AddCategory'
+import {AddCategory} from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () => {
+export const GifExpertApp = ({defaultCategories = []}) => {
 
-    const [categories, setCategories] = useState(['One Pouch']);
+    const [categories, setCategories] = useState(defaultCategories);
 
 /*     const handleAdd = () => {
         const arrUpdate = [...categories, 'HunterXHunter'];
